@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cursos</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+
+<body>
+  <section id="top">
+    <header>
+      <div class="navbar-fixed nav-wrapper">
+        <nav class="row">
+          <div class="col s8 m3 offset-m1">
+            <a href="index.html"><img class="logo" src="imagens/logosvg.svg" alt=""></a>
+          </div>
+          <div class="col s3 offset-s1 m7">
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <div class="input-field col s12 ">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+              </li>
+              <li>
+                <div class="input-field col s12 ">
+                  <input id="password" type="password" class="validate">
+                  <label for="password">Password</label>
+                </div>
+              </li>
+              <li><a href="#" class="waves-effect waves-light btn blue darken-4">ENTRAR</a></li>
+              <li><a href="sobre.html" class="modal-trigger">SOBRE</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <ul class="sidenav" id="mobile-demo">
+        <li>
+          <div class="input-field col s2 container">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Last Name</label>
+          </div>
+        </li>
+        <li>
+          <div class="input-field col s2 container">
+            <input id="password" type="password" class="validate">
+            <label for="password">Password</label>
+          </div>
+        </li>
+        <li><a href="#" class="waves-effect waves-light btn">ENTRAR</a></li>
+        <li><a href="sobre.html" class="modal-trigger">SOBRE</a></li>
+      </ul>
+    </header>
+  </section>
+
+
+  <form class="col s12" action="#">
+    <div class="row">
+      <p>
+        <label>
+          <input type="checkbox" />
+          <span>Pessoa Fisica</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" checked="checked" />
+          <span>Pessoa Jurísdica</span>
+        </label>
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s6">
+        <input placeholder="Entre com o Nome" id="name" type="text" class="validate">
+        <label for="name">Nome</label>
+      </div>
+
+      <div class="input-field col s6">
+        <input placeholder="CPF / CNPJ" id="cpf" type="text" class="validate">
+        <label for="cpf">CPF / CNPJ</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s6">
+        <input placeholder="Endereço" id="end" type="text" class="validate">
+        <label for="end">Endereço</label>
+      </div>
+      <div class="input-field col s6">
+        <input placeholder="CEP" id="cep" type="text" class="validate">
+        <label for="cep">CEP</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s6">
+        <input placeholder="UF" id="uf" type="text" class="validate">
+        <label for="uf">UF</label>
+      </div>
+      <div class="input-field col s6">
+        <input placeholder="Telefone" id="telefone" type="tel" class="validate">
+        <label for="telefone">Telefone</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s6">
+        <input placeholder="dominio@gmail.com" id="email" type="email" class="validate">
+        <label for="email">Email</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="login" type="text" class="validate">
+        <label for="login">Login</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s6">
+        <input placeholder="Senha" id="senha" type="password" class="validate">
+        <label for="senha">Senha</label>
+      </div>
+
+      <div>
+        <button href="#" type="submit" name="action" class="btn" id="enviar" value="submit">Eviar
+        </button>
+      </div>
+  </form>
+
+  <section id="imagem">
+    <div class="row">
+      <div class="col s12">
+        <img src="imagens/home.svg" alt="" class="responsive-img">
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/auto.js"></script>
+
+
+  <footer class="page-footer indigo accent-4">
+    <div class="container">
+      <div class="footer-copyright">
+        <div class="container">
+          © 2020 Direito reservados a Cactus
+        </div>
+        <h6>Proteja o Planeta</h6>
+        <i class="material-icons">vpn_lock</i>
+      </div>
+  </footer>
+</body>
+
+</html>

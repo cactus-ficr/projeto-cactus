@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Cursos</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&display=swap" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+	<link rel="stylesheet" href="css/sobre.css"/>
+</head>
+<body>
+
+    <section id="top">
+		<header>
+			<div class="navbar-fixed nav-wrapper">
+	    <nav class="row">
+	    	<div class="col s8 m3 offset-m1">
+	    		<a href="index.html"><img class="logo" src="imagens/logosvg.svg" alt=""></a>
+	    	</div>
+	    	<div class="col s3 offset-s1 m7">
+	    		<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+	    		<ul class="right hide-on-med-and-down">
+					<li><a href="cliente-home.html" class="modal-trigger">HOME</a></li>
+					<li><a href="cliente-alterar.html" class="modal-trigger">USUARIO</a></li>
+					<li><a href="cliente-sobre.html" class="modal-trigger">SOBRE</a></li>
+					<li><a href='index.html'class="waves-effect waves-light btn blue">SAIR</a></li>
+       			
+	      	</ul>
+	    	</div>
+	    </nav>
+	  </div>
+	  <ul class="sidenav" id="mobile-demo">
+        <li><a href="cliente-home.html" class="modal-trigger">HOME</a></li>
+        <li><a href="cliente-alterar.html" class="modal-trigger">USUARIO</a></li>
+		<li><a href="cliente-sobre.html" class="modal-trigger">SOBRE</a></li>
+		<li><a href='index.html'class="waves-effect waves-light btn blue">SAIR</a></li>
+  	</ul>
+		</header>
+	</section><!--/section#top-->
+	<section id="info">
+
+		<div class="slider">
+			<ul class="slides">
+			  <li>
+				<img src="imagens/Reciclagem-Aluminio.jpg"> <!-- random image -->
+				<div class="caption center-align">
+				</div>
+			  </li>
+			  <li>
+				<img src="imagens/reciclagem-papel.jpg"> <!-- random image -->
+				<div class="caption left-align">
+				</div>
+			  </li>
+			  <li>
+				<img src="imagens/reciclagem-plastico.jpg"> <!-- random image -->
+				<div class="caption right-align">
+				</div>
+			  </li>
+			  <li>
+				<img src="imagens/reciclagem-vidro.jpg"> <!-- random image -->
+				<div class="caption center-align">
+				</div>
+			  </li>
+			</ul>
+		  </div>
+
+		  <div class="container">
+            <h2>SOLICITAR</h2>
+            <P>Preencha todos os campos para realizar sua solicitação</P>
+            <div class="row">
+                <div class="col s12">
+                  Tipo Do Material
+                  <div class="input-field inline">
+                    <input id="Tipo" type="text" class="validate">
+                   
+                  </div>
+                </div>
+                <div class="col s12">
+                    Quantidade
+                    <div class="input-field inline">
+                      <input id="Quantidade" type="text" class="validate">
+                    
+                    </div>
+                </div>
+                <a class="waves-effect waves-light btn blue">SOLICITAR</a>
+              </div>
+		  </div>
+
+		  <div class="financeiro container right-align">
+			<h2>FINANCEIRO</h2>
+			<h3>SALDO</h3>
+			<P>00,00</P>
+			<H3>RESGATAR</H3>
+            <div class="row">
+                <div class="col s12">
+                  Conta
+                  <div class="input-field inline">
+                    <input id="Conta" type="text" class="validate">
+                   
+                  </div>
+                </div>
+                <div class="col s12">
+                    Valor
+                    <div class="input-field inline">
+                      <input id="Valor" type="text" class="validate">
+                      
+                    </div>
+                </div>
+                <a class="waves-effect waves-light btn blue">RESGATAR</a>
+              </div>
+		  </div>
+
+	</section>
+	<section id="footer">
+
+		<footer class="page-footer blue">
+			<div class="footer-copyright">
+			  <div class="container">
+			  © 2020 CACTUS TECHNOLOGY
+			  <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+			  </div>
+			</div>
+		</footer>
+
+	</section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function(){
+    	$('.slider').slider();
+  		});
+	</script>
+    <script src="js/auto.js"></script>
+</body>
+</html>
