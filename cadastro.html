@@ -17,50 +17,29 @@
       <div class="navbar-fixed nav-wrapper">
         <nav class="row">
           <div class="col s8 m3 offset-m1">
-            <a href="index.html"><img class="logo" src="imagens/logosvg.svg" alt=""></a>
-          </div>
+            <a href="cadastro.html"><img class="logo" src="imagens/logosvg.svg" alt=""></a>
+          </div> -->
           <div class="col s3 offset-s1 m7">
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-              <li>
-                <div class="input-field col s12 ">
-                  <input id="last_name" type="text" class="validate">
-                  <label for="last_name">Last Name</label>
-                </div>
-              </li>
-              <li>
-                <div class="input-field col s12 ">
-                  <input id="password" type="password" class="validate">
-                  <label for="password">Password</label>
-                </div>
-              </li>
-              <li><a href="#" class="waves-effect waves-light btn blue darken-4">ENTRAR</a></li>
-              <li><a href="sobre.html" class="modal-trigger">SOBRE</a></li>
+              <li><a href="cliente-home.html" class="modal-trigger">HOME</a></li>
+              <li><a href="sobre.html" class="modal-trigger">USUARIO</a></li>
+              <li><a href="cliente-sobre.html" class="modal-trigger">SOBRE</a></li>
+              <li><a href='index.html' class="waves-effect waves-light btn blue">SAIR</a></li>
             </ul>
           </div>
         </nav>
       </div>
       <ul class="sidenav" id="mobile-demo">
-        <li>
-          <div class="input-field col s2 container">
-            <input id="last_name" type="text" class="validate">
-            <label for="last_name">Last Name</label>
-          </div>
-        </li>
-        <li>
-          <div class="input-field col s2 container">
-            <input id="password" type="password" class="validate">
-            <label for="password">Password</label>
-          </div>
-        </li>
-        <li><a href="#" class="waves-effect waves-light btn">ENTRAR</a></li>
-        <li><a href="sobre.html" class="modal-trigger">SOBRE</a></li>
+        <li><a href="cliente-home.html" class="modal-trigger">HOME</a></li>
+        <li><a href="sobre.html" class="modal-trigger">USUARIO</a></li>
+        <li><a href="cliente-sobre.html" class="modal-trigger">SOBRE</a></li>
+        <li><a href='index.html' class="waves-effect waves-light btn blue">SAIR</a></li>
       </ul>
     </header>
   </section>
 
-
-  <form class="col s12" action="#">
+  <form class="col s12" action="#" name="formulario">
     <div class="row">
       <p>
         <label>
@@ -78,8 +57,8 @@
 
     <div class="row">
       <div class="input-field col s6">
-        <input placeholder="Entre com o Nome" id="name" type="text" class="validate">
-        <label for="name">Nome</label>
+        <input placeholder="Entre com o Nome" id="nome" type="text" class="validate">
+        <label for="nome">Nome</label>
       </div>
 
       <div class="input-field col s6">
@@ -90,61 +69,53 @@
 
     <div class="row">
       <div class="input-field col s6">
-        <input placeholder="Endereço" id="end" type="text" class="validate">
+        <input placeholder="Endereço" id="end" type="text" class="validate" name="endereco">
         <label for="end">Endereço</label>
       </div>
       <div class="input-field col s6">
-        <input placeholder="CEP" id="cep" type="text" class="validate">
+        <input placeholder="CEP" id="cep" type="text" class="validate" name="cep">
         <label for="cep">CEP</label>
       </div>
     </div>
 
     <div class="row">
       <div class="input-field col s6">
-        <input placeholder="UF" id="uf" type="text" class="validate">
+        <input placeholder="UF" id="uf" type="text" class="validate" name="uf">
         <label for="uf">UF</label>
       </div>
       <div class="input-field col s6">
-        <input placeholder="Telefone" id="telefone" type="tel" class="validate">
+        <input placeholder="Telefone" id="telefone" type="tel" class="validate" name="telefone">
         <label for="telefone">Telefone</label>
       </div>
     </div>
 
     <div class="row">
       <div class="input-field col s6">
-        <input placeholder="dominio@gmail.com" id="email" type="email" class="validate">
+        <input placeholder="dominio@gmail.com" id="email" type="email" class="validate" name="email">
         <label for="email">Email</label>
       </div>
       <div class="input-field col s6">
-        <input id="login" type="text" class="validate">
+        <input placeholder="Login" id="login" type="text" class="validate">
         <label for="login">Login</label>
       </div>
     </div>
 
     <div class="row">
       <div class="input-field col s6">
-        <input placeholder="Senha" id="senha" type="password" class="validate">
+        <input placeholder="Senha" id="senha" type="password" class="validate" name="senha">
         <label for="senha">Senha</label>
       </div>
 
       <div>
-        <button href="#" type="submit" name="action" class="btn" id="enviar" value="submit">Eviar
+        <button href="#" type="button" name="action" class="btn" id="enviar" value="submit" onclick="validar()">Enviar
         </button>
       </div>
   </form>
 
-  <section id="imagem">
-    <div class="row">
-      <div class="col s12">
-        <img src="imagens/home.svg" alt="" class="responsive-img">
-      </div>
-    </div>
-  </section>
-
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="js/auto.js"></script>
+  <script src="js/validaCadastro.js"></script>
 
 
   <footer class="page-footer indigo accent-4">
