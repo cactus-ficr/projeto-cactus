@@ -62,4 +62,5 @@ function validar(){
         return;
     }
 
+    alert('Formulario Enviado com Sucesso!');
 }
