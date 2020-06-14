@@ -5,6 +5,13 @@ body{
     width: 100%;
 }
 
+.border {
+    width: 90%;
+    height: 60rem;
+    border: 1px solid black;
+    opacity: 0,9;
+}
+
 .btn, .btn-large, .btn-small {
     text-decoration: none;
     color: #fff;
@@ -14,7 +21,7 @@ body{
     -webkit-transition: background-color .2s ease-out;
     transition: background-color .2s ease-out;
     cursor: pointer;
-    margin: 10rem 0 12rem -28rem;
+    margin: 10rem 0 12rem -22rem;
 }
 
 .btn, .btn-large, .btn-small, .btn-flat {

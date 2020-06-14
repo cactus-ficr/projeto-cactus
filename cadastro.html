@@ -39,78 +39,102 @@
     </header>
   </section>
 
-  <form class="col s12" action="#" name="formulario">
-    <div class="row">
-      <p>
-        <label>
-          <input name="group1" type="radio" checked />
-          <span>Pessoa Juridica</span>
-        </label>
-      </p>
-      <p>
-        <label>
-          <input name="group1" type="radio" />
-          <span>Pessoa Fisica</span>
-        </label>
-      </p>
-    </div>
+  <section class="container">
+    <div class="border">
+      <form class="col s12" action="#" name="formulario">
+        <div class="row">
+          <p>
+            <label>
+              <input name="group1" type="radio" checked />
+              <span>Pessoa Juridica</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="group1" type="radio" />
+              <span>Pessoa Fisica</span>
+            </label>
+          </p>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input placeholder="Entre com o Nome" id="nome" type="text" class="validate">
+            <label for="nome">Nome</label>
+          </div>
 
-    <div class="row">
-      <div class="input-field col s6">
-        <input placeholder="Entre com o Nome" id="nome" type="text" class="validate">
-        <label for="nome">Nome</label>
-      </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">perm_identity</i>
+            <input placeholder="CPF / CNPJ" id="cpf" type="text" pattern="[0-9]+$" type="text" required maxlength="14"
+              minlength="11" class="validate">
+            <span class="helper-text" data-error="Preenche o CPF/CNPJ corretamente"></span>
+            <label for="cpf">CPF / CNPJ</label>
+          </div>
+        </div>
 
-      <div class="input-field col s6">
-        <input placeholder="CPF / CNPJ" id="cpf" type="text" class="validate">
-        <label for="cpf">CPF / CNPJ</label>
-      </div>
-    </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">location_on</i>
+            <input placeholder="Endereço" id="end" type="text" class="validate" name="endereco">
+            <label for="end">Endereço</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">location_searching</i>
+            <input placeholder="CEP" id="cep" type="text" class="validate" name="cep">
+            <label for="cep">CEP</label>
+          </div>
+        </div>
 
-    <div class="row">
-      <div class="input-field col s6">
-        <input placeholder="Endereço" id="end" type="text" class="validate" name="endereco">
-        <label for="end">Endereço</label>
-      </div>
-      <div class="input-field col s6">
-        <input placeholder="CEP" id="cep" type="text" class="validate" name="cep">
-        <label for="cep">CEP</label>
-      </div>
-    </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">location_city</i>
+            <input placeholder="UF" id="uf" type="text" class="validate" name="uf">
+            <label for="uf">UF</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">phone</i>
+            <input placeholder="Telefone" id="telefone" type="tel" pattern="[0-9]+$" type="tel" minlength="7"
+              maxlength="11" required class="validate" name="telefone">
+            <span class="helper-text" data-error="Preenche o telefone corretamente"></span>
+            <label for="telefone">Telefone</label>
+          </div>
+        </div>
 
-    <div class="row">
-      <div class="input-field col s6">
-        <input placeholder="UF" id="uf" type="text" class="validate" name="uf">
-        <label for="uf">UF</label>
-      </div>
-      <div class="input-field col s6">
-        <input placeholder="Telefone" id="telefone" type="tel" class="validate" name="telefone">
-        <label for="telefone">Telefone</label>
-      </div>
-    </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">contact_mail</i>
+            <input placeholder="dominio@gmail.com" id="email" type="email" required id="email-input" class="validate"
+              name="email">
+            <span class=" helper-text" data-error="Preenche o e-mail corretamente"></span>
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">contact_mail</i>
+            <input placeholder="Confirmar Email" id="login" type="text" class="validate">
+            <label for="login">Confirmar Email</label>
+          </div>
+        </div>
 
-    <div class="row">
-      <div class="input-field col s6">
-        <input placeholder="dominio@gmail.com" id="email" type="email" class="validate" name="email">
-        <label for="email">Email</label>
-      </div>
-      <div class="input-field col s6">
-        <input placeholder="Login" id="login" type="text" class="validate">
-        <label for="login">Login</label>
-      </div>
-    </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">lock_outline</i>
+            <input placeholder="Senha" id="senha" type="password" class="validate" name="senha">
+            <label for="senha">Senha</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">lock_outline</i>
+            <input placeholder="Confirmar Senha" id="login" type="text" class="validate">
+            <label for="login">Confirmar Senha</label>
+          </div>
+          <div>
+            <button href="#" type="button" name="action" class="btn" id="enviar" value="submit"
+              onclick="validar()">Enviar
+            </button>
+          </div>
+        </div>
+      </form>
 
-    <div class="row">
-      <div class="input-field col s6">
-        <input placeholder="Senha" id="senha" type="password" class="validate" name="senha">
-        <label for="senha">Senha</label>
-      </div>
-
-      <div>
-        <button href="#" type="button" name="action" class="btn" id="enviar" value="submit" onclick="validar()">Enviar
-        </button>
-      </div>
-  </form>
+  </section>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

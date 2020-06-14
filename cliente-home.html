@@ -16,7 +16,7 @@
 			<div class="navbar-fixed nav-wrapper">
 	    <nav class="row">
 	    	<div class="col s8 m3 offset-m1">
-	    		<a href="index.html"><img class="logo" src="imagens/logosvg.svg" alt=""></a>
+	    		<a href="cliente-home.html"><img class="logo" src="imagens/logosvg.svg" alt=""></a>
 	    	</div>
 	    	<div class="col s3 offset-s1 m7">
 	    		<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -39,77 +39,216 @@
 		</header>
 	</section><!--/section#top-->
 	<section id="info">
+		<div class="row">
+			<div class="slider">
+				<ul class="slides">
+				  <li>
+					<img src="imagens/Reciclagem-Aluminio.jpg"> <!-- random image -->
+					<div class="caption center-align">
+					</div>
+				  </li>
+				  <li>
+					<img src="imagens/reciclagem-papel.jpg"> <!-- random image -->
+					<div class="caption left-align">
+					</div>
+				  </li>
+				  <li>
+					<img src="imagens/reciclagem-plastico.jpg"> <!-- random image -->
+					<div class="caption right-align">
+					</div>
+				  </li>
+				  <li>
+					<img src="imagens/reciclagem-vidro.jpg"> <!-- random image -->
+					<div class="caption center-align">
+					</div>
+				  </li>
+				</ul>
+			</div>
+		</div>
+		
 
-		<div class="slider">
-			<ul class="slides">
-			  <li>
-				<img src="imagens/Reciclagem-Aluminio.jpg"> <!-- random image -->
-				<div class="caption center-align">
+		<div class="container z-depth-1 center-align">
+			<div class="row">
+				<div class="col s12">
+					<h2>Solicitações</h2>
+					<section class="tabela">
+						<table>
+							<thead>
+								<tr class="tabela-interna">
+									<th>Codigo</th>
+									<th>Quantidade</th>
+									<th>Tipo</th>
+									<th>Valor</th>
+									<th>Total</th>
+								</tr>
+							</thead>
+			
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>3</td>
+									<td>vidro</td>
+									<td>$1,90</td>
+									<td>$1,90</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>5</td>
+									<td>Metal</td>
+									<td>$3,00</td>
+									<td>$3,00</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>10</td>
+									<td>plastico</td>
+									<td>$1,00</td>
+									<td>$1,00</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>100</td>
+									<td>Papel</td>
+									<td>$0,90</td>
+									<td>$0,90</td>
+								</tr>
+							</tbody>
+						</table>
 				</div>
-			  </li>
-			  <li>
-				<img src="imagens/reciclagem-papel.jpg"> <!-- random image -->
-				<div class="caption left-align">
-				</div>
-			  </li>
-			  <li>
-				<img src="imagens/reciclagem-plastico.jpg"> <!-- random image -->
-				<div class="caption right-align">
-				</div>
-			  </li>
-			  <li>
-				<img src="imagens/reciclagem-vidro.jpg"> <!-- random image -->
-				<div class="caption center-align">
-				</div>
-			  </li>
-			</ul>
-		  </div>
+
+			</div>
+		</div>
 
 		  <div class="container">
-            <h2>SOLICITAR</h2>
+            <div class="row">
+				
+                <div class="col s6 z-depth-1 center-align">
+					<h2>SOLICITAR</h2>
             <P>Preencha todos os campos para realizar sua solicitação</P>
-            <div class="row">
-                <div class="col s12">
-                  Tipo Do Material
-                  <div class="input-field inline">
-                    <input id="Tipo" type="text" class="validate">
-                   
-                  </div>
-                </div>
-                <div class="col s12">
-                    Quantidade
-                    <div class="input-field inline">
-                      <input id="Quantidade" type="text" class="validate">
-                    
-                    </div>
-                </div>
-                <a class="waves-effect waves-light btn blue">SOLICITAR</a>
-              </div>
+				  <div class="row">
+					<div class="input-field inline">
+						<select>
+						  <option value="1">Papel</option>
+						  <option value="2">Aluminio</option>
+						  <option value="3">Plastico</option>
+						  <option value="4">Vidro</option>
+						</select>
+						<label>Tipo</label>
+					  </div>
+					  <div class="input-field inline">
+						<input placeholder="Quantidade" id="Quantidade" type="text" class="validate">
+						<label for="Quantidade">Quantidade</label>
+					</div>
+				  </div>
+				  <div class="row">
+					<div class="input-field inline">
+						<input placeholder="Horário" id="Horario" type="text" class="validate">
+						<label for="Horario">Horário</label>
+					</div>
+					
+				
+				  </div>
+				  <div class="row">
+					<a class="waves-effect waves-light btn blue">SOLICITAR</a>
+				  </div>
+				</div>
+                <div class="col s6 z-depth-1 center-align ">
+					<h2>Alterar</h2>
+					<P>Preencha todos os campos para alterar sua solicitação</P>
+					<div class="row">
+						<div class="input-field inline">
+							<select>
+							  <option value="1">Papel</option>
+							  <option value="2">Aluminio</option>
+							  <option value="3">Plastico</option>
+							  <option value="4">Vidro</option>
+							</select>
+							<label>Tipo</label>
+						  </div>
+						  <div class="input-field inline">
+							<input placeholder="Quantidade" id="Quantidade" type="text" class="validate">
+							<label for="Quantidade">Quantidade</label>
+						</div>
+					  </div>
+					  <div class="row">
+						<div class="input-field inline">
+							<input placeholder="Horário" id="Horario" type="text" class="validate">
+							<label for="Horario">Horário</label>
+						</div>
+						<div class="input-field inline">
+							<input placeholder="Codigo" id="Cd_alterar" type="text" class="validate">
+							<label for="Cd_alterar">Codigo</label>
+						</div>
+					
+					  </div>
+					  <div class="row">
+						<a class="waves-effect waves-light btn blue">Alterar</a>
+					  </div>
+					
+					
+              	</div>
+		 	 </div>
 		  </div>
-
-		  <div class="financeiro container right-align">
-			<h2>FINANCEIRO</h2>
-			<h3>SALDO</h3>
-			<P>00,00</P>
-			<H3>RESGATAR</H3>
-            <div class="row">
-                <div class="col s12">
-                  Conta
-                  <div class="input-field inline">
-                    <input id="Conta" type="text" class="validate">
-                   
-                  </div>
-                </div>
-                <div class="col s12">
-                    Valor
-                    <div class="input-field inline">
-                      <input id="Valor" type="text" class="validate">
-                      
-                    </div>
-                </div>
-                <a class="waves-effect waves-light btn blue">RESGATAR</a>
-              </div>
+ 
+		  <div class="container ">
+			  <div class="row">
+				<div class="col s6 z-depth-1 center-align">
+					
+						<h2>EXCLUIR</h2>
+							<p>Preencha todos os campos para Excluir sua solicitação</p>
+							<P>e para nos ajudar responda o motivo.</P>
+							<p>OBRIGADO!</p>
+						<div class="row">
+							<div class="input-field col s8 offset-s2">
+								<input placeholder="Codigo" id="Cd_excluir" type="text" class="validate">
+								<label for="Cd_excluir">Codigo</label>
+							</div>
+						</div>	   
+						<div class="row">
+							<div class="input-field col s8 offset-s2">
+								
+									<select>
+									  <option value="1">Atraso da coleta</option>
+									  <option value="2">Solicitação mal feita</option>
+									  <option value="3">Pouco Produto</option>
+									  <option value="4">Outras</option>
+									</select>
+									<label>Tipo</label>
+								  
+							</div>
+						</div>
+						<div class="row">
+							<a class="waves-effect waves-light btn blue">Excluir</a>
+						</div>
+					
+				</div>
+				<div class="col s6 z-depth-1 center-align">
+					<h2>FINANCEIRO</h2>
+						<p>SALDO</p>
+						<P>00,00</P>
+						<p>RESGATAR</p>
+					<div class="row">
+						<div class="input-field col s8 offset-s2">
+							<input placeholder="Conta" id="conta" type="text" class="validate">
+							<label for="conta">Conta</label>
+						</div>
+					</div>	   
+					<div class="row">
+						<div class="input-field col s8 offset-s2">
+							<input placeholder="Valor" id="valor" type="text" class="validate">
+							<label for="valor">Valor</label>
+						</div>
+					</div>
+					<div class="row">
+						<a class="waves-effect waves-light btn blue">RESGATAR</a>
+					</div>
+				</div>
+			</div>
+				 
+			  </div>
+			  
 		  </div>
+			
 
 	</section>
 	<section id="footer">
